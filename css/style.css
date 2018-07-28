@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1159px;
+    height: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.head_nav {
+    height: 39px;
+    background-color: #010302;
+    display: flex;
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;
+   
+}
+
+ul.nav_list li.logo:first-child {
+    margin-right: auto;
+  }
+
+.nav_list a {
+    display: block;
+    margin-right: auto;
+}
+
+.nav_list .logo {
+    background: #4584b1;
+  }
+
+
+
+
+
+.main_fotel {
+    height: 504px;
+    background-image: -webkit-gradient(linear, 0 0, 0 488, color-stop(0.059, #fafafa), color-stop(0.993, #ceced6), to(#c8cbd2));
+    background-image: -webkit-linear-gradient(#fafafa 5.9%, #ceced6 99.3%, #c8cbd2);
+    background-image: -moz-linear-gradient(#fafafa 5.9%, #ceced6 99.3%, #c8cbd2);
+    background-image: -o-linear-gradient(#fafafa 5.9%, #ceced6 99.3%, #c8cbd2);
+    background-image: linear-gradient(#fafafa 5.9%, #ceced6 99.3%, #c8cbd2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fotel_col_left {
+    display: flex;
+    align-items: center;
+   
+    margin-right: 10px;
+}
+
+.fotel_img {
+    background-image: url(../images/black_chair.png);
+    width: 455px;
+    height: 420px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 11px;
+    margin-top: 55px;
+    display: block;
+    
+}
+
+.main_fotel h1 {
+    display: block;
+}
+
+.fotel_article p{
+   display: block;
+}
+
+.fotel_col_right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotel_col_right h1 {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.fotel_col_right article {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.fotel_col_right div{
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.fotel_col_right input.but {
+   display: block;
+    background-color: #4584b1;
+    position: absolute;
+}
+
+
+.main_chairs {
+    height: 351px;
+    background-color: rgb(7, 69, 90);
+}
+
+.main_cennik {
+    height: 725px;
+    background-color: lightgreen;
+}
+
+.main_formularz {
+    height: 588px;
+    background-color: wheat;
+}
+
+.main_foot {
+    height: 67px;
+    background-color: lightslategray;
+}
