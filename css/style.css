@@ -78,6 +78,7 @@ ul.nav_list li.logo:first-child {
 
 .fotel_article p{
    display: block;
+   margin-top: 0;
 }
 
 .fotel_col_right {
@@ -100,10 +101,12 @@ ul.nav_list li.logo:first-child {
     margin-right: 0;
 }
 
-.fotel_col_right input.but {
+.fotel_col_right a{
    display: block;
+   height: 200px;
+   width: 300px;
     background-color: #4584b1;
-    position: absolute;
+    
 }
 
 
