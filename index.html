@@ -13,7 +13,7 @@
 <body>
   <header class="head_nav">
     <div class="container">
-      <a href="#" class="logo">SIT ON CHAIR</a>
+      <a href="#" class="logo" name="logo">SIT ON CHAIR</a>
       <nav>
         <ul class="nav_list">
           <li class="drop">
@@ -55,10 +55,13 @@
 
       <div class="fotel_col_right">
         <div class="fotel_col_right_content">
-          <h1>SIT ON OUR CHAIR</h1>
+          <h1 name="sitOn">SIT
+            <span class="color">ON</span> OUR
+            <span class="color">CHAIR</span>
+          </h1>
         </div>
         <article class="fotel_article">
-          <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada
+          <p name="fotel_article">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada
             elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
         </article>
         <div class="fotel_button">
@@ -75,87 +78,102 @@
 
     <div class="chairs_content">
 
-      <div class="lphoto"></div>
+      <div class="lphoto">
+        <div class="lphoto_napis">
+          <p name="photo_opis">Chair CLAIR</p>
 
-      <div class="rphoto"></div>
+        </div>
 
-      <article class="opis">
-        <h2>Finds all inputs</h2>
-        <p>Finds all inputs that are checked and hilights the text nest sibling span. Notice there is na change when clicking
-          the checkboxes since no click events have been linked</p>
-        <p>Notice there is no change when sliking the chexkboxes since no click events have beer</p>
+      </div>
+
+      <div class="rphoto">
+        <div class="rphoto_napis">
+          <p name="photo_opis">Chair MARGARITA</p>
+
+        </div>
+      </div>
+
+      <article class=" opis ">
+        <h2 class="opis_nag ">Finds all inputs</h2>
+        <div class="opis_p ">
+          <p name="article1 ">Finds all inputs that are checked and hilights the text nest sibling span. Notice there is na change when clicking
+            the checkboxes since no click events have been linked</p>
+          <p name="article2 ">Notice there is no change when sliking the chexkboxes since no click events have beer</p>
+        </div>
       </article>
 
     </div>
 
   </section>
 
-  <section class="main_cennik container">
-    <div class="napis_cennik">
-      <h2>CENNIK</h2>
+  <section class="main_cennik container ">
+    <div class="napis_cennik ">
+      <h2 name="cennik ">CENNIK</h2>
     </div>
 
-    <div class="plans">
-      <div class="basic">
-        <div class="flex">
-          <div class="basic_napis">
+    <div class="plans ">
+      <div class="basic ">
+        <div class="flex ">
+          <div class="basic_napis ">
             <p>BASIC PLAN</p>
           </div>
 
-          <div class="cennik_circle">
+          <div class="cennik_circle ">
             <p>8599</p>
             <p>PLN/MSC</p>
           </div>
-          <div class="cennik_opis">
-            <p>Zakup towaru + dowóz</p>
-            <p>Serwis</p>
+          <div class="cennik_opis ">
+            <p name="opis ">Zakup towaru + dowóz</p>
+            <p name="opis ">Serwis</p>
           </div>
-          <div class="button_flex">
-            <a class="basic_button" type="button" name="basic_button">DOŁĄCZ</a>
+          <div class="button_flex ">
+            <a class="basic_button " type="button " name="basic_button ">DOŁĄCZ</a>
           </div>
 
         </div>
       </div>
 
 
-      <div class="standard">
-        <div class="flex">
-          <div class="basic_napis">
+      <div class="standard ">
+        <div class="flex ">
+          <div class="basic_napis ">
             <p>STANDARD PLAN</p>
           </div>
 
-          <div class="standard_circle">
-            <p>9599</p>
-            <p>PLN/MSC</p>
+          <div class="standard_circle ">
+            <p name="circle ">95
+              <span name="circle ">99</span>
+            </p>
+            <p name="circle ">PLN/MSC</p>
           </div>
-          <div class="standard_opis">
-            <p>Zakup towaru + dowóz</p>
-            <p>Serwis</p>
-            <p>Gwarancja 5 lat</p>
+          <div class="standard_opis ">
+            <p name="opis ">Zakup towaru + dowóz</p>
+            <p name="opis ">Serwis</p>
+            <p name="opis ">Gwarancja 5 lat</p>
           </div>
-          <div class="button_div">
-            <a class="standard_button" type="button">DOŁĄCZ</a>
+          <div class="button_div ">
+            <a class="standard_button " type="button ">DOŁĄCZ</a>
           </div>
         </div>
       </div>
 
-      <div class="advance">
-        <div class="flex">
-          <div class="basic_napis">
+      <div class="advance ">
+        <div class="flex ">
+          <div class="basic_napis ">
             <p>ADVANCE PLAN</p>
           </div>
-          <div class="cennik_circle">
+          <div class="cennik_circle ">
             <p>9599</p>
             <p>PLN/MSC</p>
           </div>
-          <div class="advance_opis">
-            <p>Zakup towaru + dowóz</p>
-            <p>Serwis</p>
-            <p>Gwarancja 6 lat</p>
-            <p>Porady projektanta</p>
+          <div class="advance_opis ">
+            <p name="opis ">Zakup towaru + dowóz</p>
+            <p name="opis ">Serwis</p>
+            <p name="opis ">Gwarancja 6 lat</p>
+            <p name="opis ">Porady projektanta</p>
           </div>
-          <div class="button_div_adv">
-            <a class="advance_button" type="button">DOŁĄCZ</a>
+          <div class="button_div_adv ">
+            <a class="advance_button " type="button ">DOŁĄCZ</a>
           </div>
         </div>
       </div>
@@ -163,43 +181,43 @@
 
   </section>
 
-  <section class="main_formularz container">
-    <div class="formularz_napis">
-      <p>KONTAKT</p>
+  <section class="main_formularz container ">
+    <div class="formularz_napis ">
+      <p name="form_napis ">KONTAKT</p>
     </div>
-    <div class="formularz_position">
-      <div class="formularz_in">
-        <input type="text" name="name" placeholder="Imię">
-        <input type="text" name="email" placeholder="Email">
-        <textarea type="text" name="textarea" placeholder="Wiadomość"></textarea>
+    <div class="formularz_position ">
+      <div class="formularz_in ">
+        <input type="text " name="name " placeholder="Imię ">
+        <input type="text " name="email " placeholder="Email ">
+        <textarea type="text " name="textarea " placeholder="Wiadomość "></textarea>
       </div>
 
-      <div class="formularz_right">
-        <div class="formularz_right_image">
+      <div class="formularz_right ">
+        <div class="formularz_right_image ">
 
         </div>
-        <div class="checkbox_flex">
-          <input type="checkbox">
+        <div class="checkbox_flex ">
+          <input type="checkbox ">
           <label>Zgadzam się na przetwarzanie danych osobowych</label>
 
         </div>
-        <div class="form_button">
-          <a type="button" name="form_button">WYŚLIJ</a>
+        <div class="form_button ">
+          <a type="button " name="form_button ">WYŚLIJ</a>
         </div>
       </div>
   </section>
-  <footer class="main_foot container">
-    <div class="foot_position">
-      <div class="foot_left_text">
+  <footer class="main_foot container ">
+    <div class="foot_position ">
+      <div class="foot_left_text ">
         <p>Copyright 2014 | All Rights Reserved. -Sit On Chair</p>
       </div>
-      <div class="foot_middle">
-        <div class="flickr"></div>
-        <div class="vimeo"></div>
-        <div class="pinterest"></div>
-        <div class="twitter"></div>
+      <div class="foot_middle ">
+        <div class="flickr "></div>
+        <div class="vimeo "></div>
+        <div class="pinterest "></div>
+        <div class="twitter "></div>
       </div>
-      <div class="foot_right_text">
+      <div class="foot_right_text ">
         <p>SIT ON CHAIR</p>
       </div>
 
