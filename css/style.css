@@ -153,12 +153,12 @@ a.aDrop{
 }
 
 .main_fotel {
-    height: 501px;
-    background-image: -webkit-gradient(linear, 0 0, 65 502, from(#f7f7f7), color-stop(0.994, #ceced6), to(#cacdd4));
-background-image: -webkit-linear-gradient(277.377728268401deg, #f7f7f7, #ceced6 99.4%, #cacdd4);
-background-image: -moz-linear-gradient(277.377728268401deg, #f7f7f7, #ceced6 99.4%, #cacdd4);
-background-image: -o-linear-gradient(277.377728268401deg, #f7f7f7, #ceced6 99.4%, #cacdd4);
-background-image: linear-gradient(172.62227173159903deg, #f7f7f7, #ceced6 99.4%, #cacdd4);
+    height: 503px;
+    background-image: -webkit-gradient(linear, 0 0, 0 503, from(#f7f7f7), color-stop(0.992, #ceced6), to(#c9ccd3));
+background-image: -webkit-linear-gradient(#f7f7f7, #ceced6 99.2%, #c9ccd3);
+background-image: -moz-linear-gradient(#f7f7f7, #ceced6 99.2%, #c9ccd3);
+background-image: -o-linear-gradient(#f7f7f7, #ceced6 99.2%, #c9ccd3);
+background-image: linear-gradient(#f7f7f7, #ceced6 99.2%, #c9ccd3);
     overflow: auto;
    
 } 
@@ -205,12 +205,10 @@ background-image: linear-gradient(172.62227173159903deg, #f7f7f7, #ceced6 99.4%,
     background-position: center;
     background-size: 593px 424px;
     image-rendering: auto;
-    display: block;
-    width: 323px;
+    width: 333px;
     height: 339px;
-
-    margin-top: 107px;
-    margin-left: 41px;
+    margin-top: 110px;
+    margin-left: 38px;
 }
 
 
@@ -241,21 +239,20 @@ background-image: linear-gradient(172.62227173159903deg, #f7f7f7, #ceced6 99.4%,
 article.fotel_article{
     display: flex;
     justify-content: center;
-   
-    margin-top: 23px;
+    margin-top: 30px;
     height: 87px;
     width: 420px;
     text-align: center;
     position: relative;
 }
 h1[name="sitOn"]{
-    font-size: 38px;
+    font-size: 40px;
+    padding-left: 23px;
     font-weight: 500;
     color: #010302;
     top: -7px;
     position: relative;
     letter-spacing: 0px;
-
 }
 
 
@@ -289,8 +286,6 @@ a[name="fotel_button"] {
     font-size: 22px;
     text-align: center;
     cursor: pointer;
-
-  
 }
 
 
@@ -303,23 +298,20 @@ a[name="fotel_button"] {
 .main_chairs {
     height: 351px;
     background-image: -webkit-gradient(linear, 0 0, 930 0, to(#fff));
-background-image: -webkit-linear-gradient(360deg, #fff);
-background-image: -moz-linear-gradient(360deg, #fff);
-background-image: -o-linear-gradient(360deg, #fff);
-background-image: linear-gradient(90deg, #fff);
-    
-    
+    background-image: -webkit-linear-gradient(360deg, #fff);
+    background-image: -moz-linear-gradient(360deg, #fff);
+    background-image: -o-linear-gradient(360deg, #fff);
+    background-image: linear-gradient(90deg, #fff);
 }
 
 .chairs_content {
-   display: flex;
-   flex-direction: row;
-justify-content: flex-start;
-padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 60px;
 }
 
 .lphoto {
-    
     display: block;
     box-sizing: border-box;
     background-image: url(../images/box1_img.jpg);
@@ -337,10 +329,8 @@ padding-top: 60px;
     height: 61px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.374);
-   
     margin-top: 148px;
     padding-top: 12px;
-
     padding-left: 13px;
    
 }
@@ -355,7 +345,6 @@ p[name="photo_opis"]{
 }
 
 .rphoto{
-
     box-sizing: border-box;
     display: block;
     background-image: url(../images/box2_img.jpg);
@@ -365,19 +354,16 @@ p[name="photo_opis"]{
     border: 2px solid #dedede;
     margin-top: -32px;
     margin-left: 28px;
-   
-
 }
 
 .opis {
-    
     display: block;
-    width: 335px;
-    height: 249px;
+    width: 339px;
+    height: 255px;
     border: 2px solid #dedede;
     margin-top: -32px;
     margin-left: 26px;
-position: relative;
+    position: relative;
     
 }
 
@@ -418,7 +404,7 @@ p[name="article2"]{
 
 
 .main_cennik {
-    height: 721px;
+    height: 726px;
     background-image: -webkit-gradient(linear, 0 0, 957 0, to(#f1f1f1));
 background-image: -webkit-linear-gradient(360deg, #f1f1f1);
 background-image: -moz-linear-gradient(360deg, #f1f1f1);
@@ -431,8 +417,8 @@ background-image: linear-gradient(90deg, #f1f1f1);
     position: relative;
     width: 316px;
     height: 34px;
-    margin-top: 42px;
     margin-left: 0;
+    padding-top: 42px;
 }
 
 h2[name="cennik"]{
@@ -459,7 +445,7 @@ h2[name="cennik"]{
     background-color: #f9f9f9;
     border: 2px solid #d5d5d5;
     margin-left: 0px;
-    margin-top: 83px;
+    margin-top: 119px;
     text-align: center;
     position: relative;
 }
@@ -625,7 +611,7 @@ sup{
     height: 500px;
     background-color: #27c7ab;
     border: 2px solid #27c7ab;
-    margin-top: 83px;
+    margin-top: 119px;
     margin-left: 30px;
     text-align: center;
     position: relative;
@@ -710,7 +696,7 @@ sup{
     height: 497px;
     background-color: #f9f9f9;
     border: 2px solid #d5d5d5;
-    margin-top: 83px;
+    margin-top: 119px;
     margin-left: 31px;
     text-align: center;
     position: relative;
@@ -804,8 +790,7 @@ position: relative;
     height: 50px;
     position: absolute;
     margin-left: 5px;
-    margin-top: 40px;
-    
+    margin-top: 36px;    
 }
 
 h2[name="form_napis"]{
@@ -837,21 +822,21 @@ div p[name="form_napis"]{
     width: 629px;
     height: 368px;
     margin-left: 7px;
-    margin-top: 114px;
+    margin-top: 111px;
 }
 
 input[name="name"] {
     display: block;
-    width: 625px;
-    height: 62px;
+    width: 633px;
+    height: 64px;
     margin-top: 5px;
     border: 1px solid #c1ebe0;
 }
 
 input[name='email'] {
     display: block;
-    width: 625px;
-    height: 64px;
+    width: 633px;
+    height: 67px;
     margin-top: 26px;
     border: 1px solid #c1ebe0;
 
@@ -859,8 +844,8 @@ input[name='email'] {
 
 textarea {
     display: block;
-    width: 627px;
-    height: 185px;
+    width: 633px;
+    height: 187px;
     margin-top: 26px;
     resize: none;
     font-family: 'Raleway';
@@ -876,7 +861,7 @@ textarea {
     display: block;
     width: 342px;
     height: 382px;
-    margin-left: 55px;
+    margin-left: 61px;
     margin-top: 101px;
 }
 
@@ -895,9 +880,9 @@ textarea {
 }
 
 input[type="checkbox"] {
-  display: block;
-    width: 48px;
-    height: 40px;
+    display: block;
+    width: 50px;
+    height: 49px;
     margin-top: -4px;
     margin-left: 1px;
     border: 1px solid #bbeadd;
@@ -1025,8 +1010,8 @@ a[name="form_button"] {
     align-items: center;
     width: 151px;
     height: 65px;
-    margin-left: 280px;
-    margin-top: 0;
+    margin-left: 285px;
+    margin-top: -14px;
 }
 
 .flickr {
@@ -1047,7 +1032,7 @@ a[name="form_button"] {
     background-size: 35px 35px;
     background-repeat: no-repeat;
     margin-top: 3px;
-    margin-left: 0px;
+    margin-left: 3px;
     cursor: pointer;
 
 }
@@ -1059,7 +1044,7 @@ a[name="form_button"] {
     background-size: 35px 35px;
     background-repeat: no-repeat;
     margin-top: 3px;
-    margin-left: 2px;
+    margin-left: 5px;
     cursor: pointer;
 
 }
@@ -1071,7 +1056,7 @@ a[name="form_button"] {
     background-size: 35px 35px;
     background-repeat: no-repeat;
     margin-top: 3px;
-    margin-left: 1px;
+    margin-left: 3px;
     cursor: pointer;
 
 }
@@ -1084,6 +1069,6 @@ a[name="form_button"] {
     font-weight: 500;
     width: 145px;
     height: 65px;
-    margin-left: 62px;
+    margin-left: 67px;
     margin-top: 0;
 }
