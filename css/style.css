@@ -200,7 +200,7 @@ background-image: linear-gradient(#f7f7f7, #ceced6 99.2%, #c9ccd3);
 
 }
 
-.fotel_photo {
+.black_chair {
     background-image: url(../images/black_chair.png);
     background-position: center;
     background-size: 593px 424px;
@@ -209,7 +209,23 @@ background-image: linear-gradient(#f7f7f7, #ceced6 99.2%, #c9ccd3);
     height: 339px;
     margin-top: 110px;
     margin-left: 38px;
+    visibility: visible;
 }
+.orange_chair {
+    background-image: url(../images/orange_chair.png);
+    background-position: center;
+    background-size: 469px 337px;
+    image-rendering: auto;
+    width: 333px;
+    height: 339px;
+    border-bottom: 71.85%;
+    margin-top: -335px;
+    margin-left: 38px;
+    visibility: hidden;
+    position: absolute;
+}
+
+
 
 
 .fotel_col_right {
@@ -323,6 +339,8 @@ a[name="fotel_button"] {
     margin-top: -32px;
     
 }
+
+
 
 .lphoto_napis , .rphoto_napis{
     width: 100%;
