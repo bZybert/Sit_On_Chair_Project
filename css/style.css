@@ -3,24 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 @font-face {
-    font-family: 'Raleway', sans-serif;
-    src: local('Relaway') url(../fonts/raleway-light-webfont.woff), format("woff");
-    src: local('Relaway') url(../fonts/raleway-medium-webfont.woff), format("woff");
-    src: local('Relaway') url(../fonts/raleway-regular-webfont.woff), format("woff");
-    src: local('Relaway') url(../fonts/raleway-semibold-webfont.woff), format("woff");
-    src: local('Relaway') url(../fonts/raleway-bold-webfont.woff), format("woff");
-    src: local('Relaway') url(../fonts/raleway-extrabold-webfont.woff), format("woff");
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
+
+
+
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 body {
     width: 1200px;
     height: 2273px;
     margin: 0 auto;
-    font-family: 'Raleway',Tahoma;
+    font-family: 'ralewayregular',Tahoma;
 }
 
 .container {
@@ -292,6 +325,8 @@ a[name="fotel_button"] {
     display: flex;
     justify-content: center;
     align-items: center;
+  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+
     width: 264px;
     height: 53px;
     margin-top: 31px;
@@ -612,6 +647,8 @@ sup{
     display: flex;
     align-items: center;
     justify-content: center;
+  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+
     width: 122px;
     height: 35px;
     margin-top: 40px;
@@ -694,6 +731,8 @@ sup{
     display: flex;
     align-items: center;
     justify-content: center;
+  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+
     width: 122px;
     height: 35px;
     margin-top: 0px;
@@ -773,6 +812,8 @@ sup{
     display: flex;
     align-items: center;
     justify-content: center;
+  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+
     width: 122px;
     height: 35px;
     margin-top: 0px;
@@ -980,6 +1021,8 @@ a[name="form_button"] {
     display: flex;
     justify-content: center;
     align-items: center;
+  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+
     width: 340px;
     height: 70px;
     background-color: #27c7ab;
