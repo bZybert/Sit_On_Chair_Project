@@ -1,4 +1,4 @@
-
+// ukrywanie napisu wewnątrz div w drugiej sekcji
 var lphoto = document.querySelector('.lphoto');
 var rphoto = document.querySelector('.rphoto');
 
@@ -26,6 +26,7 @@ rphoto.addEventListener('mouseout', function (e) {
 
 })
 
+// slider w pierwszej sekcji
 var fotels = document.querySelector('.fotels');
 var l_button = document.querySelector('.l_enc');
 var r_button = document.querySelector('.r_enc');

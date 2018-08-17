@@ -1,6 +1,8 @@
 var chairs = document.querySelector('span[name="chairs"]');
 var colors = document.querySelector('span[name="colors"]');
 var materials = document.querySelector('span[name="materials"]');
+var checkInp = document.getElementById('transport');
+var sum = document.querySelector('div.sum strong');
 
 var spChair = document.querySelector('h4.title');
 var spColors = document.querySelector('span.color');
@@ -12,27 +14,32 @@ var prColors = document.querySelector('span.color.value');
 var prMaterials = document.querySelector('span.pattern.value');
 var prTransport = document.querySelector('span.transport.value');
 
-var checkInp = document.querySelector('div.checkbox.check-box');
-var sum = document.querySelector('div.sum strong').innerText;
+// wyjściowe zmienne do sumowania wartości "koszyka"
+var chairRes = 0;
+var colorRes = 0;
+var materRes = 0;
+var transRes = 0;
 
-console.log(sum);
+console.log(sum.innerText);
 
 chairs.addEventListener('click', function (e) {
-    if (chairs.nextElementSibling.style.display == 'block') {
+    if (chairs.nextElementSibling.style.display == 'block') {   //aktywna lista dropdown
         chairs.nextElementSibling.style.display = 'none'
     } else {
         chairs.nextElementSibling.style.display = 'block'
         var nameList = document.querySelectorAll('li[data-chair-price]')
-        console.log(nameList);
-        nameList.forEach(function (e) {
+        nameList.forEach(function (e) {                     // event na pozycjach z listy 
             e.addEventListener('click', function () {
                 console.log(e.dataset.chairPrice);
                 console.log(e.innerText)
 
-                spChair.innerText = e.innerText;
-                prChair.innerText = e.dataset.chairPrice;
+                spChair.innerText = e.innerText;            // dodanie nazwy do tabeli po prawej
+                prChair.innerText = e.dataset.chairPrice;   // dodanie ceny do tabeli po prawej
 
-                // sum = parseInt(e.dataset.chairPrice);
+                // sumowanie wartości "koszyka"
+                chairRes = parseInt(prChair.innerText);
+                sum.innerText = colorRes + chairRes + materRes + transRes;
+
             })
         })
     }
@@ -44,7 +51,6 @@ colors.addEventListener('click', function (e) {
     } else {
         colors.nextElementSibling.style.display = 'block'
         var nameList = document.querySelectorAll('li[data-color-price]');
-        console.log(nameList);
         nameList.forEach(function (e) {
             e.addEventListener('click', function () {
                 console.log(e.dataset.colorPrice);
@@ -52,6 +58,9 @@ colors.addEventListener('click', function (e) {
 
                 spColors.innerText = e.innerText;
                 prColors.innerText = e.dataset.colorPrice;
+
+                colorRes = parseInt(prColors.innerText);
+                sum.innerText = colorRes + chairRes + materRes + transRes;
             })
         })
     }
@@ -63,7 +72,6 @@ materials.addEventListener('click', function (e) {
     } else {
         materials.nextElementSibling.style.display = 'block'
         var nameList = document.querySelectorAll('li[data-price]');
-        console.log(nameList);
         nameList.forEach(function (e) {
             e.addEventListener('click', function () {
                 console.log(e.dataset.price);
@@ -71,32 +79,31 @@ materials.addEventListener('click', function (e) {
 
                 spMaterials.innerText = e.innerText;
                 prMaterials.innerText = e.dataset.price;
+
+                materRes = parseInt(prMaterials.innerText);
+                sum.innerText = colorRes + chairRes + materRes + transRes;
+                //.log(sumTab);
             })
         })
     }
 })
 
-checkInp.addEventListener('click', function () {
+checkInp.addEventListener('click', function (a) {
+
     var name = document.querySelector('label[for="transport"]');
     var price = document.getElementById('transport');
-    console.log(name);
-    spTransport.innerText = name.innerText;
-    prTransport.innerText = transport.dataset.transportPrice;
+    if (checkInp.checked) {
+        console.log(name);
+        spTransport.innerText = name.innerText;
+        prTransport.innerText = price.dataset.transportPrice;
+
+        transRes = parseInt(prTransport.innerText);
+        sum.innerText = colorRes + chairRes + materRes + transRes;
+    } else {
+        spTransport.innerText = "";
+        prTransport.innerText = "";
+
+        transRes = 0;
+        sum.innerText = colorRes + chairRes + materRes;
+    }
 })
-
-function summary() {
-    if (prColors.innerText !== null) {
-        var color = Number(prColors.innerText);
-    }
-
-    var pattern = Number(prMaterials.innerText);
-    var transport = Number(prTransport.innerText);
-    var type = Number(prChair.innerText);
-    console.log(color);
-
-    if (sum.innerText !== 0) {
-        return color + pattern + transport + type;
-
-    }
-}
-sum.innerText = summary()
