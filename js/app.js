@@ -2,8 +2,6 @@
 var lphoto = document.querySelector('.lphoto');
 var rphoto = document.querySelector('.rphoto');
 
-console.log(rphoto);
-
 lphoto.addEventListener('mouseover', function (e) {
     var content = lphoto.firstElementChild
     content.style.visibility = "hidden";
@@ -51,4 +49,23 @@ l_button.addEventListener("click", function () {
         fotels.lastElementChild.style.visibility = "hidden";
     }
 
+})
+
+// aktywowanie dropdown menu
+var dropBut = document.querySelector('li.drop');
+var navDrop = document.querySelector('ul li ul')
+var fotelContent = document.querySelector("div.fotel_content");
+
+console.log(navDrop);
+
+dropBut.addEventListener('mouseover', function (e) {
+    navDrop.style.visibility = "visible";
+    navDrop.style.display = "block";
+    navDrop.style.opacity = 1;
+})
+
+fotelContent.addEventListener('click', function () {
+    navDrop.style.visibility = "hidden";
+    navDrop.style.display = "none";
+    //navDrop.style.opacity = 0;
 })
